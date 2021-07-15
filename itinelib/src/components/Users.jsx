@@ -1,13 +1,13 @@
 import React from 'react'
 import Avatar from '../assets/images/avatar.png'
-import '../assets/style/user.scss'
+import '../assets/style/login.scss'
 
 
 
 class Users extends React.Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <h1>Bonjour 'Users'</h1>
                 <div id="container">
                     <h2>Votre Profile</h2>
@@ -36,7 +36,7 @@ class Users extends React.Component {
 
                     </div>
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }
