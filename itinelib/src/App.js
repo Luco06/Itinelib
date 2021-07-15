@@ -1,11 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './components/router/Routes'
 
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Itinelib</h1>
-    </div>
-  );
+  <div className="App">
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+
+  </div>
 }
 
 export default App;
