@@ -15,6 +15,9 @@ function Navigation(props) {
             <NavLink exact to="/login">
                 Connexion
             </NavLink>
+            <NavLink exact to="/inscription">
+                Inscription
+            </NavLink>
         </nav>
     );
 }

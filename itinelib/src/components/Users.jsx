@@ -5,6 +5,15 @@ import '../assets/style/user.scss'
 
 
 class Users extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+            prenom: '',
+            nom: '',
+            age:'',
+            ville:''
+        }
+    }
     render() {
         return (
             <React.Fragment>
@@ -15,10 +24,10 @@ class Users extends React.Component {
                         <img src={Avatar} alt="user_profile" />
                     </div>
                     <form>
-                        <label name="firstname">Prénom: </label>
-                        <label name="lastname">Nom: </label>
-                        <label name="age">Age: </label>
-                        <label name="town">Ville: </label>
+                        <label name="firstname">Prénom: {this.state.prenom} </label>
+                        <label name="lastname">Nom: {this.state.nom} </label>
+                        <label name="age">Age: {this.state.age} </label>
+                        <label name="town">Ville: {this.state.ville} </label>
                         <label name="preference">Préférence</label>
                         <select name="preference" id="">
                             <option value="velo">Velo</option>

@@ -3,7 +3,7 @@ import '../assets/style/login.scss'
 import logo from '../assets/images/logo.png'
 
 export class Login extends React.Component {
-
+   
     onSubmitHandler(event) {
         event.preventDefault();
     }
@@ -33,7 +33,7 @@ export class Login extends React.Component {
 
                         <button type="submit">Se connecter</button>
                     </form>
-                    <p><a href="#">Vous n'avez pas de compte?</a></p>
+                    <p> <a href="inscription">Vous n'avez pas de compte?</a></p>
                 </div>
             </React.Fragment>
         )
