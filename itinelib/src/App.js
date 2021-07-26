@@ -1,5 +1,5 @@
-import { BrowserRouter } from 'react-router-dom';
-import Routes from './components/router/Routes';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Itinerary} from "./components/index.js"
 
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
       <BrowserRouter>
         <h1>Hello
       </h1>
-        <Routes />
+        <Route />
+              <Route exact path="/itineraire" component={Itinerary} ></Route>
       </BrowserRouter>
 
     </div>
