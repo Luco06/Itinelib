@@ -10,7 +10,7 @@ function App() {
         <h1>Hello
       </h1>
         <Route />
-              <Route exact path="/itineraire" component={Itinerary} ></Route>
+              <Route exact path="/road" component={Itinerary} ></Route>
       </BrowserRouter>
 
     </div>
