@@ -6,7 +6,7 @@ class Register extends React.Component {
         return ( 
             <React.Fragment>
                 <h2>Iscription</h2>
-                <form>
+                <form id="register">
                     <label htmlFor="">Nom</label>
                     <input type="text" placeholder="Votre nom"/>
 

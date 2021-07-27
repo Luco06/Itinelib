@@ -17,13 +17,15 @@ class Users extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Bonjour 'Users'</h1>
-                <div id="container">
+                <h1>Bonjour {this.state.prenom}</h1>
+                <div id="user">
+                    <div className="h2e">
                     <h2>Votre Profile</h2>
+                    </div>
                     <div id="photo">
                         <img src={Avatar} alt="user_profile" />
                     </div>
-                    <form>
+                    <form id="formUser">
                         <label name="firstname">Prénom: {this.state.prenom} </label>
                         <label name="lastname">Nom: {this.state.nom} </label>
                         <label name="age">Age: {this.state.age} </label>
@@ -35,7 +37,9 @@ class Users extends React.Component {
                             <option value="quad">Quad</option>
                         </select>
                     </form>
+                    <div className="h2e">
                     <h3>Historique des itineraires</h3>
+                    /</div>
                     <div id="historique">
                         <div id="trajet">
                             <p>Départ:</p>

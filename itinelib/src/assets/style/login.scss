@@ -2,6 +2,7 @@
     margin: auto;
     border: solid 1px black;
     border-radius: 10px 10px 10px 10px;
+    background: #52796F;
     #logo{
         width: 90%;
         margin: auto;
@@ -16,6 +17,7 @@
     }
     h1{
     text-align: center;
+    color: white;
     }
     form{
         display: flex;
@@ -26,6 +28,7 @@
             justify-content: flex-start;
             padding:2%;
             input,label{
+                color: white;
                 border-radius: 10px 10px 10px 10px;
                 width: 60%;
                 margin: auto;
@@ -37,6 +40,7 @@
             justify-content: flex-start;
             padding: 2%;
             input,label{
+                color: white;
                 border-radius: 10px 10px 10px 10px;
                 width: 60%;
                 margin: auto;
