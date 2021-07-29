@@ -1,20 +1,16 @@
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Itinerary} from "./components/index.js"
-
+import Home from "./components/Home/home.js";
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        <h1>Hello
-      </h1>
-        <Route />
-              <Route exact path="/road" component={Itinerary} ></Route>
+        <Home />
+        <Route exact path="/itineraire" component={Itinerary} ></Route>
       </BrowserRouter>
-
     </div>
-
   );
 }
 
