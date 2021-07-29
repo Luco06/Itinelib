@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from '../Header/header.js';
 import Footer from '../Footer/footer.js';
-import Image from '../../assets/backgroundhome.jpg';
-import './styles.scss';
+import Image from '../../assets/images/backgroundhome.jpg';
 
 class Home extends React.Component {
 

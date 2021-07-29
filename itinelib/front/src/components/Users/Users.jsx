@@ -1,6 +1,5 @@
 import React from 'react'
-import Avatar from '../assets/images/avatar.png'
-import '../assets/style/user.scss'
+import Avatar from '../../assets/images/avatar.png'
 
 
 

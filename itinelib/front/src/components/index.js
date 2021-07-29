@@ -5,4 +5,4 @@ export {default as Home} from './Home/home';
 export {default as Login} from './Login/Login';
 export {default as Navigation} from './Navigation/Navigation';
 export {default as Register} from './Register/Register';
-export {default as User} from './User/Users';
+export {default as Users} from './Users/Users';
