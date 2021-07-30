@@ -12,7 +12,7 @@ function Map(){
             />
             <Marker position={[45.7578137, 4.8320114]}>
                 <Popup>
-                    Lyon
+                    Paris
                 </Popup>
             </Marker>
             </MapContainer>
