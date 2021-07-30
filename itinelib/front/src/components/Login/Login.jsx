@@ -1,5 +1,6 @@
-import React from 'react'
-import logo from '../../assets/images/logo.png'
+import React from 'react';
+import logo from '../../assets/images/logo.png';
+import './login.scss';
 
 export class Login extends React.Component {
    

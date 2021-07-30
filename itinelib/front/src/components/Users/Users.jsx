@@ -1,5 +1,6 @@
-import React from 'react'
-import Avatar from '../../assets/images/avatar.png'
+import React from 'react';
+import Avatar from '../../assets/images/avatar.png';
+import './users.scss';
 
 
 

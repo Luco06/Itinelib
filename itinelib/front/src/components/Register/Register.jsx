@@ -1,4 +1,5 @@
 import React from 'react';
+import './register.scss';
 
 class Register extends React.Component {
     render() { 
