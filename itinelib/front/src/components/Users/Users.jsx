@@ -17,7 +17,7 @@ class Users extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1 className="user__h1">Bonjour {this.state.prenom}</h1>
+                <h1 className="user__h1">Hello {this.state.prenom}</h1>
                 <div className="user">
                     <div className="user__h2e">
                     <h2>Votre Profile</h2>
