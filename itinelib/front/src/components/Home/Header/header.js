@@ -8,7 +8,7 @@ class Header extends React.Component {
         <nav className="header__menu">
           <li className="header__menu__li"><NavLink to="/">Home</NavLink></li>
           <li className="header__menu__li"><NavLink to="/">Itinéraires</NavLink></li>
-          <li className="header__menu__li"><NavLink to="/">Qui sommes-nous ?</NavLink></li>
+          <li className="header__menu__li"><NavLink to="/about">Qui sommes-nous ?</NavLink></li>
           <li className="header__menu__li"><NavLink to="/">Nous contacter</NavLink></li>
         </nav>
       );
