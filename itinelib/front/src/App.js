@@ -1,5 +1,5 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Itinerary, Users, Login, Register, Home} from "./components/index.js"
+import { Itinerary, Users, Login, Register, Home, Map} from "./components/index.js"
 
 
 
@@ -13,6 +13,7 @@ function App() {
           <Route exact path="/itineraire" component={Itinerary} ></Route>
           <Route exact path="/login" component={Login} />
           <Route exact path="/inscription" component={Register} />
+          <Route exact path="/map" component={Map} />
       </BrowserRouter>
 
     </div>

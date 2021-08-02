@@ -1,5 +1,5 @@
-import '../../../scss/components/searchRoad.scss'
 import { useForm } from "react-hook-form";
+import './searchRoad.scss';
 
 function SearchRoad(props){
 

@@ -1,5 +1,11 @@
+<<<<<<< HEAD:itinelib/front/src/components/Users/Users.jsx
 import React from 'react'
 import Avatar from '../../assets/images/avatar.png'
+=======
+import React from 'react';
+import Avatar from '../../assets/images/avatar.png';
+import './users.scss';
+>>>>>>> 22ba867a5cb04d77990eb927e03c1ce4a5fd0ad1:itinelib/front/src/components/Users/Users.jsx
 
 
 
@@ -16,15 +22,15 @@ class Users extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Bonjour {this.state.prenom}</h1>
-                <div id="user">
-                    <div className="h2e">
+                <h1 className="user__h1">Bonjour {this.state.prenom}</h1>
+                <div className="user">
+                    <div className="user__h2e">
                     <h2>Votre Profile</h2>
                     </div>
-                    <div id="photo">
-                        <img src={Avatar} alt="user_profile" />
+                    <div className="user__photo">
+                        <img className="user__img" src={Avatar} alt="user_profile" />
                     </div>
-                    <form id="formUser">
+                    <form className="user__form">
                         <label name="firstname">Prénom: {this.state.prenom} </label>
                         <label name="lastname">Nom: {this.state.nom} </label>
                         <label name="age">Age: {this.state.age} </label>
@@ -36,15 +42,15 @@ class Users extends React.Component {
                             <option value="quad">Quad</option>
                         </select>
                     </form>
-                    <div className="h2e">
+                    <div className="user__h2e">
                     <h3>Historique des itineraires</h3>
-                    /</div>
-                    <div id="historique">
-                        <div id="trajet">
+                    </div>
+                    <div className="user__historique">
+                        <div className="user__trajet">
                             <p>Départ:</p>
                             <p>Arrivé:</p>
                         </div>
-                        <p id="mode">Mode :</p>
+                        <p  className="user__mode">Mode :</p>
 
                     </div>
                 </div>

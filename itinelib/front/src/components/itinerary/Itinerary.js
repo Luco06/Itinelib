@@ -1,5 +1,6 @@
 import React from 'react';
-import SearchRoad from './searchRoad/SearchRoad.js'
+import SearchRoad from './searchRoad/SearchRoad.js';
+import './itinerary.scss';
 
 function Itinerary(props){
     return(

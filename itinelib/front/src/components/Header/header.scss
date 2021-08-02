@@ -1,0 +1,64 @@
+li, a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 0.9em;
+    text-shadow: #EEE 1px 0 10px;
+    text-align: center;
+
+    &:hover {
+        color: whitesmoke;
+    }
+}
+
+.jb {
+    background-color: aqua;
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type=search] {
+    width: 10em;
+    margin: 0 0.2em;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input[type=search]:focus {
+    outline: none;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+// Media queries :
+// 320px
+// 768px
+// 1440px
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 320px) { 
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        margin-top: 1em;
+        font-size: 0.8em;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 320px) and (max-width: 768px) {
+    form, nav {
+        display: flex;
+        flex-wrap: flex;
+    }
+}
