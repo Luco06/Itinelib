@@ -1,11 +1,6 @@
-<<<<<<< HEAD:itinelib/front/src/components/Users/Users.jsx
-import React from 'react'
-import Avatar from '../../assets/images/avatar.png'
-=======
 import React from 'react';
 import Avatar from '../../assets/images/avatar.png';
 import './users.scss';
->>>>>>> 22ba867a5cb04d77990eb927e03c1ce4a5fd0ad1:itinelib/front/src/components/Users/Users.jsx
 
 
 
