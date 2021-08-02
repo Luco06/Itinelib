@@ -1,5 +1,5 @@
 @media (min-width: 300px) {
-	form {
+	.searchRoad__form {
 		display: flex;
 		background-color: blue;
 		flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 768px) {
-	form {
+	.searchRoad__form {
 		flex-direction: row;
 		position: relative;
 	}
