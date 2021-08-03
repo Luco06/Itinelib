@@ -1,5 +1,6 @@
 import React from 'react';
 import './homebody.scss';
+import Button from '../../Button/button';
 
 class Homebody extends React.Component {
     render() {
@@ -11,6 +12,8 @@ class Homebody extends React.Component {
                 className="body__btn">
                 Accéder aux itinéraires
             </button>
+            <Button 
+              className="body__btn" type="button" size="medium" value="Accéder aux itinéraires" color="green"/>
         </div>
       );
     }

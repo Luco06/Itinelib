@@ -1,3 +1,5 @@
+@import 'src/styles/vars';
+
 .body__menu {
     display: flex;
     flex-direction: column;
@@ -10,6 +12,7 @@
 }
 
 .body__title {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1em;
 }
 
@@ -17,12 +20,13 @@
     display: inline-block;
     position: relative;
     margin: 1em auto 0 auto!important;
-    border-radius: 4px;
-    background-color: #1b4332;
+    border-radius: 10px;
+    background-color: whitesmoke;
     border: none;
-    color: #fff;
+    color: $green8;
     text-align: center;
     font-size: 0.9em;
+    font-weight: 600;
     padding: 10px;
     width: 160px;
     transition: all 0.5s;
@@ -32,6 +36,7 @@
 
     &:after {
         content: '»';
+        color: whitesmoke;
         position: absolute;
         opacity: 0;  
         top: 10px;
@@ -42,7 +47,8 @@
     &:hover {
         padding-right: 12px;
         padding-left:8px;
-        background-color: #081c15;
+        background-color: $green8;
+        color: whitesmoke;
     }
 
     &:hover:after {
