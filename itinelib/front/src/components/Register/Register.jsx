@@ -2,10 +2,13 @@ import React from 'react';
 import './register.scss';
 import logo from '../../assets/images/logo.png';
 
+
+
 class Register extends React.Component {
     render() {
         return (
             <React.Fragment>
+                
                 <div className="register__page">
                     <div className="register__container">
                         <div className="register__logo">
@@ -29,6 +32,7 @@ class Register extends React.Component {
                     </div>
 
                 </div>
+                
             </React.Fragment>
         );
     }

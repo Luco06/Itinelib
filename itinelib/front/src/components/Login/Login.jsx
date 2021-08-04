@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png';
 import './login.scss';
+import Header from '../Header/header';
+import Footer from'../Footer/footer';
 
 export class Login extends React.Component {
 
@@ -10,6 +12,7 @@ export class Login extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <Header/>
                 <div className="login__page">
 
                     <div className="login__container">
@@ -38,6 +41,7 @@ export class Login extends React.Component {
                         <p className="login__p"> <a href="inscription">Vous n'avez pas de compte?</a></p>
                     </div>
                 </div>
+                <Footer/>
             </React.Fragment>
         )
     }
