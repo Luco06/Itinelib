@@ -11,7 +11,9 @@ class Home extends React.Component {
           <div className="homepage">
             <Header className="header__menu" />
             <Homebody className="body__menu" />
-            <Footer className="footer__menu" />
+            <div className="homepage__footer">
+              <Footer className="footer__menu" />
+            </div>
           </div>
         )
     }

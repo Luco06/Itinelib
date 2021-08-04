@@ -1,12 +1,15 @@
 import React from 'react';
 import './contact.scss';
 import Header from '../Home/Header/header';
+import Footer from '../Home/Footer/footer';
 
 class Contact extends React.Component {
     render() {
       return (
         <div className="contact">
-            <Header />
+            <div className="contact__header">
+              <Header />
+            </div>
             {/* <br />
             <br />
             <br />
@@ -28,6 +31,9 @@ class Contact extends React.Component {
                 </button>
               </section>
             </form>
+            <div className="contact__footer">
+              <Footer />
+            </div>
         </div>
       );
     }

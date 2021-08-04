@@ -12,8 +12,12 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
 
+  &__footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
 
 .header__menu {
   z-index: 10;
@@ -27,7 +31,5 @@
 
 .footer__menu {
   justify-content: flex-end;
-  position: absolute;
-  bottom: 0;
   z-index: 10;
 }
