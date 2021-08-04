@@ -20,11 +20,6 @@ class Contact extends React.Component {
               <input type="text" />
               <label htmlFor="">Votre message</label>
               <textarea name="message" id="message" cols="30" rows="8"></textarea>
-              <section className="contact__submit">
-                <button className="contact__submit--btn" type="submit">
-                  Envoyer
-                </button>
-              </section>
             </form>
             <div className="contact__footer">
               <Footer />
