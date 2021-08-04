@@ -1,0 +1,57 @@
+@import 'src/styles/vars';
+
+.button {
+    margin: 1em auto 0 auto;
+    border: none;
+    border-radius: 10px;
+    width: 160px;
+    transition: all 0.5s;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    cursor: pointer;
+    text-align: center;
+
+    &:after {
+      content: '»';
+      color: whitesmoke;
+      position: absolute;
+      opacity: 0;  
+      top: 10px;
+      right: 100px;
+      transition: 0.5s;
+    }
+
+    &:hover {
+        padding-right: 12px;
+        padding-left:8px;
+        background-color: $green8;
+        color: whitesmoke;
+    }
+
+    &:hover:after {
+        opacity: 1;
+        // right: 10px;
+    }
+  
+    &-small {
+      padding: 1em;
+      font-size: 0.6em;
+      font-weight: 500;
+    }
+  
+    &-medium {
+      padding: 1em;
+      font-size: 0.8em;
+      font-weight: 500;
+    }
+  
+    &-large {
+      padding: 1em;
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    &-green {
+      background-color: $green9;
+      color: #fff;
+    }
+}

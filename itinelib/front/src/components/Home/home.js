@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from '../Header/header.js';
-import Footer from '../Footer/footer.js';
+import Header from './Header/header';
+import Homebody from './Homebody/homebody';
+import Footer from './Footer/footer';
 import './home.scss';
 
 class Home extends React.Component {
@@ -9,7 +10,10 @@ class Home extends React.Component {
         return (
           <div className="homepage">
             <Header className="header__menu" />
-            <Footer className="footer__menu" />
+            <Homebody className="body__menu" />
+            <div className="homepage__footer">
+              <Footer className="footer__menu" />
+            </div>
           </div>
         )
     }

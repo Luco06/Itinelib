@@ -1,6 +1,6 @@
 .header__menu {
-    position: relative;
     background-color: rgba(0, 0, 0, .5);
+    color: black;
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
@@ -10,7 +10,7 @@
     color: white;
     text-decoration: none;
     list-style-type: none;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-shadow: #EEE 1px 0 10px;
     text-align: center;
     margin: 1em;
@@ -20,28 +20,21 @@
     }
 }
 
-// .searchbar {
-//     position: absolute;
-//     right: 0;
-
-//     &__input {
-//         width: 8em;
-//         margin: 0 0.2em;
-//         border: none;
-//         border-radius: 10px;
-//         padding: 5px;
-
-//         &:focus {
-//             outline: none;
-//         }
-//     }
-// }
+.header__menu__li a {
+    color: white;
+    font-size: 0.8em;
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 550px) { 
     .header__menu {
         display: flex;
         flex-direction: column;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .header__menu__li {
+        margin: 0.5em;
     }
 }
 

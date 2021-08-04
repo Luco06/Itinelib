@@ -1,7 +1,9 @@
 export {default as Itinerary} from './itinerary/Itinerary.js';
-export {default as Footer} from './Footer/footer.js';
-export {default as Header} from './Header/header';
+export {default as Footer} from './Home/Footer/footer';
+export {default as Header} from './Home/Header/header';
 export {default as Home} from './Home/home';
+export {default as About} from './About/about';
+export {default as Contact} from './Contact/contact';
 export {default as Login} from './Login/Login';
 export {default as Navigation} from './Navigation/Navigation';
 export {default as Register} from './Register/Register';
