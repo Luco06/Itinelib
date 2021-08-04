@@ -3,6 +3,7 @@
 .contact {
     align-items: center;
     background-color: $green7;
+    height: 100vh;
 
     &__header {
       margin-bottom: 2em;
@@ -10,6 +11,8 @@
 
     &__footer {
       margin-top: 2em;
+      position: absolute;
+      bottom: 0;
     }
 
     &__title {
@@ -25,7 +28,6 @@
 
     &__form {
       margin: auto;
-      width: 70vw;
       display: flex;
       flex-direction: column;
 
@@ -64,4 +66,31 @@
         width: 10em;   
       }
     }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 550px) { 
+  .contact__form {
+    width: 90vw;
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 550px) and (max-width: 768px) {
+  .contact__form {
+      width: 75vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact__form {
+      width: 60vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__form {
+      width: 50vw;
+  }
 }

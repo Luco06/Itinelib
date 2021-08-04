@@ -1,4 +1,5 @@
 export {default as Itinerary} from './itinerary/Itinerary.js';
+export {default as Button} from './Button/button';
 export {default as Footer} from './Footer/footer';
 export {default as Header} from './Header/header';
 export {default as Home} from './Home/home';
