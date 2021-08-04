@@ -18,6 +18,11 @@
     }
 }
 
+.footer__menu__li a {
+    color: white;
+    font-size: 0.8em;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 550px) { 
     .footer__menu {
