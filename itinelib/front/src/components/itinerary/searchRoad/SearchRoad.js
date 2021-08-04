@@ -10,7 +10,7 @@ function SearchRoad(props){
     } 
 
     return(
-        <form className="searchRoad__form" onSubmit={handleSubmit(onSubmit)}>
+        <form className="sexarchRoad__form" onSubmit={handleSubmit(onSubmit)}>
             <div className="searchRoad__form__inputContainer">
                 <label htmlFor="searchRegion"> Région</label>
                 <input type="text" id='searchRegion' {...register('region')} />
