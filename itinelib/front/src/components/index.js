@@ -7,3 +7,6 @@ export {default as Navigation} from './Navigation/Navigation';
 export {default as Register} from './Register/Register';
 export {default as Users} from './Users/Users';
 export {default as Map} from './Map/map';
+export {default as RoadMap} from './itinerary/roadMap/RoadMap.js';
+export {default as SearchRoad} from './itinerary/searchRoad/SearchRoad';
+
