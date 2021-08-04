@@ -1,7 +1,7 @@
 @media (min-width: 300px) {
 	.searchRoad__form {
 		display: flex;
-		background-color: #52796f;
+		background-color: #cad2c5;
 		flex-direction: column;
 		padding: 1em;
 		margin: 0.1em 0;
@@ -17,6 +17,7 @@
 
 		label {
 			margin-right: 1em;
+			font-size: 1.2em;
 		}
 
 		input {

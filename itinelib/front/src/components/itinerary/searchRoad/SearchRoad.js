@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import './searchRoad.scss';
+import { Button } from '../../index'
 
 function SearchRoad(props){
 
@@ -25,7 +26,8 @@ function SearchRoad(props){
                 <input type="text" id='SearchTransport' {...register('transport')} />
             </div>
 
-            <input id="searchRoad__form__inputSubmit" type="submit"  />
+            <Button id="searchRoad__form__inputSubmit" type="button" size="medium" value="Envoyer" color="green" />
+
 
         </form> 
     )
