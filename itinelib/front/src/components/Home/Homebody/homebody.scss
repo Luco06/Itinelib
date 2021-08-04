@@ -11,6 +11,11 @@
     width: 100vw;
 }
 
+.body__link {
+    display: flex;
+    justify-content: center;
+}
+
 .body__title {
     font-family: 'Quicksand', sans-serif;
     font-size: 0.7em;
