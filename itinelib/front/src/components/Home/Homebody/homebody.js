@@ -13,7 +13,7 @@ class Homebody extends React.Component {
                 type="button" 
                 size="medium" 
                 value="Accéder aux itinéraires" 
-                color="green"/>
+                color="darkgreen"/>
             </NavLink>
         </div>
       );

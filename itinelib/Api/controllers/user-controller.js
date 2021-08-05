@@ -56,10 +56,10 @@ class UserController {
          }
     }
 
-    getAll = async (req, res) => {
-        const data = await User.findAll();
-        res.json(data);
-    }
+    // getAll = async (req, res) => {
+    //     const data = await User.findAll();
+    //     res.json(data);
+    // }
 
     getOne = async (req, res) => {
         const id = req.params.id;

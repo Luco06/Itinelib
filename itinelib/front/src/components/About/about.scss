@@ -1,3 +1,8 @@
+.fas {
+    font-size: 1em;
+    color: white;
+}
+
 .about__content {
     height: 40vh;
     width: 70vw;
@@ -10,13 +15,21 @@
     padding: 1em;
 
     & h1 {
-        font-size: 1em;
-        margin: 1em auto 2em auto;
+        margin: 1em auto;
     }
 
     & p {
-        font-size: 0.7em;
+        font-size: 0.6em;
         line-height: 1.5;
         margin-bottom: 0.5em;
+    }
+}
+
+.about__team {
+    
+    &--card {
+        height: 250px;
+        width: 150px;
+        border: 1px solid black;
     }
 }

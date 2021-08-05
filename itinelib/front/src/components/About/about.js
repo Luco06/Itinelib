@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.scss';
-import { Header } from '../index';
+import { Header, Button } from '../index';
+import { NavLink } from 'react-router-dom';
 
 class About extends React.Component {
     render() {
@@ -15,21 +16,26 @@ class About extends React.Component {
 
                 <p>Alors, qu'attendez-vous pour rejoindre la communauté ?</p>
 
-                <button class="button">
-                  S'inscrire
-                </button>
-            </section>
-            <section className="about__team">
+                <NavLink to="/inscription">
+                  <Button 
+                    type="button" 
+                    size="small" 
+                    value="S'inscrire" 
+                    color="lightgreen"
+                  />
+                </NavLink>
                 <h1>La team</h1>
-                <article className="about__team--card">
-                  <h2>Jean-Baptiste MENARD</h2>
-                </article>
-                <article className="about__team--card">
-                  <h2>Luc-Olivier YOHAN</h2>
-                </article>
-                <article className="about__team--card">
-                  <h2>Mandel AGBOVON</h2>
-                </article>
+                <div className="about__team">
+                  <article className="about__team--card">
+                    <h2>Jean-Baptiste MENARD</h2>
+                  </article>
+                  <article className="about__team--card">
+                    <h2>Luc-Olivier YOHAN</h2>
+                  </article>
+                  <article className="about__team--card">
+                    <h2>Mandel AGBOVON</h2>
+                  </article>
+                </div>
             </section>
         </div>
       );

@@ -1,12 +1,7 @@
-h2 {
-	text-align: center;
-	@media only screen and (min-width: 768px) {
-		font-size: 3rem;
-	}
-	@media only screen and (min-width: 1024px) {
-		font-size: 4rem;
-	}
+.header__register {
+	margin-bottom: 2em;
 }
+
 .register {
 	display: flex;
 	flex-direction: column;
@@ -41,6 +36,8 @@ h2 {
 	input[type="text"],
 	[type="email"],
 	[type="password"] {
+		outline: none;
+		padding: 5px;
 		margin: 5px;
 		border-radius: 10px 10px 10px 10px;
 		@media only screen and (min-width: 320px) {
@@ -69,5 +66,17 @@ h2 {
 			font-size: 1.5rem;
 			width: 30%;
 		}
+	}
+
+	&__h2 {
+		text-align: center;
+		margin-bottom: 1em;
+
+		@media only screen and (min-width: 768px) {
+			font-size: 3rem;
+		}
+		@media only screen and (min-width: 1024px) {
+			font-size: 4rem;
+		}	
 	}
 }

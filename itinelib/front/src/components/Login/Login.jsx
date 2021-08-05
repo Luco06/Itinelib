@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png';
 import './login.scss';
+import { Header } from '../index'
 
 export class Login extends React.Component {
    
@@ -10,6 +11,7 @@ export class Login extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <Header />
                 <div className="login__container">
                     <div className="login__logo">
                         <img src={logo} alt="Itinelib" />

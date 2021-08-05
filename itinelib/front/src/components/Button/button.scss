@@ -6,14 +6,8 @@
     border-radius: 10px;
     width: 160px;
     transition: all 0.5s;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
     cursor: pointer;
     text-align: center;
-
-    &:hover {
-        background-color: $green8;
-        color: whitesmoke;
-    }
 
     &:hover:after {
         opacity: 1;
@@ -38,8 +32,22 @@
       font-weight: 500;
     }
 
-    &-green {
-      background-color: $green9;
+    &-darkgreen {
+      background-color: $green8;
       color: #fff;
+
+      &:hover {
+        background-color: $green9;
+        color: whitesmoke;
+      }
+    }
+
+    &-lightgreen {
+      background-color: $green5;
+      color: #fff;
+
+      &:hover {
+        background-color: $green6;
+      }
     }
 }
