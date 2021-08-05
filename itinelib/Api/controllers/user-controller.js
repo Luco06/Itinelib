@@ -1,16 +1,26 @@
 const db = require('../models');
 const User = db.User;
+const Itineraries = db.itinerary;
 
 class UserController {
 
     getAll = async (req, res) => {
-        const data = await User.findAll();
+        const data = await User.findAll(
+        );
         res.json(data);
     }
 
     getOne = async (req, res) => {
         const id = req.params.id;
-        const data = await User.findByPk(id);
+        const data = await User.findByPk(id,{
+            include: [
+                {
+                    model: Itineraries,
+                    as: 'itinerary',
+                    attributes: [ 'depart', 'arriver', 'ville', 'region', 'transport']
+                }
+            ]
+        });
         res.json(data);
     }
 
@@ -22,9 +32,9 @@ class UserController {
             password: req.body.password,
             age: req.body.age,
             city: req.body.city,
-            preferences: req.body.preferences
+            preferences: req.body.preferences,
         }
-        const data = await User.create(new_user);
+        const data = await User.create(new_user,);
         res.json(data);
     }
 
@@ -47,7 +57,10 @@ class UserController {
     delete = async (req, res) => {
         const id = req.params.id;
         const data = await User.destroy({
-            where: {id: id}
+            where: {id: id},
+            include :[
+                {model: Itineraries, as:'itinerary'}
+            ]
         });
         res.json(data);
     }
