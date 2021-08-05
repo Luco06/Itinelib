@@ -1,7 +1,6 @@
 import React from 'react';
 import './contact.scss';
-import Header from '../Home/Header/header';
-import Footer from '../Home/Footer/footer';
+import { Header, Footer } from '../index';
 
 class Contact extends React.Component {
     render() {
@@ -10,10 +9,6 @@ class Contact extends React.Component {
             <div className="contact__header">
               <Header />
             </div>
-            {/* <br />
-            <br />
-            <br />
-            <br /> */}
             <form className="contact__form" action="">
               <h2 class="contact__title">Nous contacter</h2>
               <p className="contact__subtitle">Une question ? une remarque ? N'hésitez pas à nous contacter via le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>

@@ -7,7 +7,7 @@ class Footer extends React.Component {
       return (
         <nav class="footer__menu">
           <li className="footer__menu__li"><NavLink to="/">Mentions légales</NavLink></li>
-          <li className="footer__menu__li"><NavLink to="/">L'équipe</NavLink></li>
+          <li className="footer__menu__li"><NavLink to="/about">L'équipe</NavLink></li>
         </nav>
       );
     }

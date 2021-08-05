@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from './Header/header';
 import Homebody from './Homebody/homebody';
-import Footer from './Footer/footer';
+import { Header, Footer } from '../index';
 import './home.scss';
 
 class Home extends React.Component {
