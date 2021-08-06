@@ -3,7 +3,6 @@
 .contact {
     align-items: center;
     background-color: $green7;
-    height: 100vh;
 
     &__header {
       margin-bottom: 2em;
@@ -30,6 +29,7 @@
       margin: auto;
       display: flex;
       flex-direction: column;
+      padding-bottom: 2em;
 
       & label {
         margin: 1em 0 0 1em;

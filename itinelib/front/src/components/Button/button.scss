@@ -50,4 +50,13 @@
         background-color: $green6;
       }
     }
+
+    &-white {
+      background-color: white;
+      color: $green9;
+
+      &:hover {
+        background-color: #ccc;
+      }
+    }
 }

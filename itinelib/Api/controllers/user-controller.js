@@ -7,6 +7,8 @@ class UserController {
 
     register = async (req, res) => {
         try {
+            console.log(req);
+            console.log(req.body.user);
             const email = req.body.email;
             let user = await User.findOne({where: {email}});
             if(user) {
@@ -19,7 +21,7 @@ class UserController {
                 res.json({email: data.email, createdAt: data.createdAt});
             }
         } catch (err)  {
-            console.err(err);
+            console.log(err);
             res.status(400).send('Mauvaise requête');
         }
     }

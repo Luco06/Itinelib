@@ -1,7 +1,4 @@
-.fas {
-    font-size: 1em;
-    color: white;
-}
+@import 'src/styles/vars';
 
 .about__content {
     height: 40vh;
@@ -15,7 +12,7 @@
     padding: 1em;
 
     & h1 {
-        margin: 1em auto;
+        margin: 2em auto 1em auto;
     }
 
     & p {
@@ -26,10 +23,31 @@
 }
 
 .about__team {
+    display: flex;
+    justify-content: center;
     
-    &--card {
+    &__card {
+        margin: 0.5em;
         height: 250px;
         width: 150px;
-        border: 1px solid black;
+
+        & img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 0.5em;
+        }
+
+        & h2 {
+            font-weight: 500;
+        }
+
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+
+        & i {
+            margin: 0.5em;
+        }
     }
 }

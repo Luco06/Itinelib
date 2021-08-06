@@ -2,11 +2,13 @@ import React from 'react';
 import './homebody.scss';
 import { Button } from '../../index';
 import { NavLink } from 'react-router-dom';
+import Logo from '../../../assets/images/Logo.svg';
 
 class Homebody extends React.Component {
     render() {
       return (
         <div className="body__menu">
+            <img className="body__logo" src={Logo} alt="logo" />
             <h2 className="body__title">Partez à l'aventure et découvrez de nouveaux itinéraires à partager avec vos proches.</h2>
             <NavLink className="body__link" to="/map">
               <Button 
