@@ -1,74 +1,3 @@
-<<<<<<< HEAD
-.login__container {
-	margin: auto;
-	border: solid 1px black;
-	border-radius: 10px 10px 10px 10px;
-	background: #52796f;
-	.login__logo {
-		width: 90%;
-		margin: auto;
-		padding: 5%;
-		img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 150px;
-			height: 151px;
-		}
-	}
-	h1 {
-		text-align: center;
-		color: white;
-	}
-	.login__form {
-		display: flex;
-		flex-direction: column;
-		.login__email {
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			padding: 2%;
-			input {
-				border-radius: 10px 10px 10px 10px;
-				width: 60%;
-				margin: auto;
-			}
-			label {
-				color: white;
-				border-radius: 10px 10px 10px 10px;
-				width: 60%;
-				margin: auto;
-			}
-		}
-		.login__password {
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			padding: 2%;
-			input {
-				border-radius: 10px 10px 10px 10px;
-				width: 60%;
-				margin: auto;
-			}
-			label {
-				color: white;
-				border-radius: 10px 10px 10px 10px;
-				width: 60%;
-				margin: auto;
-			}
-		}
-	}
-	button {
-		width: auto;
-		margin: auto;
-		margin-top: 20px;
-		font-size: 0.7rem;
-	}
-	p {
-		text-align: center;
-	}
-}
-=======
 .login__page{
    
     padding: 50px;
@@ -197,4 +126,3 @@
         }
     }
 }
->>>>>>> c68d3b0ebd6669d15bd3e9041d80b9dd307f44a4
