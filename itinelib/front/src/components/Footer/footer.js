@@ -5,11 +5,10 @@ import './footer.scss';
 class Footer extends React.Component {
     render() {
       return (
-        <div>
-            <nav class="navbar navbar-dark bg-dark">
-                <li><NavLink to="/">Mentions légales</NavLink></li>
-            </nav>
-        </div>
+        <nav class="footer__menu">
+          <li className="footer__menu__li"><NavLink to="/">Mentions légales</NavLink></li>
+          <li className="footer__menu__li"><NavLink to="/about">L'équipe</NavLink></li>
+        </nav>
       );
     }
   }

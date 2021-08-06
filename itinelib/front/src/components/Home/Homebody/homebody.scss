@@ -1,0 +1,42 @@
+@import 'src/styles/vars';
+
+.body__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.body__link {
+    display: flex;
+    justify-content: center;
+}
+
+.body__title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.7em;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 550px) { 
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__menu__li, .active {
+        margin: 0.5em;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 550px) and (max-width: 768px) {
+    .header__menu {
+        display: flex;
+        justify-content: center;
+    }
+}

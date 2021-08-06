@@ -1,17 +1,18 @@
 import React from 'react';
-import Header from '../Header/header.js';
-import Footer from '../Footer/footer.js';
-import Image from '../../assets/images/backgroundhome.jpg';
+import Homebody from './Homebody/homebody';
+import { Header, Footer } from '../index';
 import './home.scss';
 
 class Home extends React.Component {
 
     render () {
         return (
-          <div>
-            <Header className="home__header" />
-            <img src={Image} alt="background" />
-            <Footer />
+          <div className="homepage">
+            <Header className="header__menu" />
+            <Homebody className="body__menu" />
+            <div className="homepage__footer">
+              <Footer className="footer__menu" />
+            </div>
           </div>
         )
     }

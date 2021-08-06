@@ -1,0 +1,96 @@
+@import 'src/styles/vars';
+
+.contact {
+    align-items: center;
+    background-color: $green7;
+    height: 100vh;
+
+    &__header {
+      margin-bottom: 2em;
+    }
+
+    &__footer {
+      margin-top: 2em;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &__title {
+      color: white;
+    }
+
+    &__subtitle {
+      margin: 1.5em auto 2em auto;
+      color: white;
+      font-size: 0.6em;
+      text-align: center;
+    }
+
+    &__form {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+
+      & label {
+        margin: 1em 0 0 1em;
+        color: white;
+        font-size: 0.8em;
+      }
+
+      & input {
+        height: 1.5em;
+        font-size: 0.8em;
+      }
+
+      & input, & textarea {
+        outline: none;
+        border: none;
+        resize: none;
+        margin-top: 0.5em;
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+    }
+
+    &__submit {
+      display: flex;
+      justify-content: flex-end;
+      
+      &--btn {
+        background-color: #d8f3dc;
+        border: none;
+        margin-top: 1em;
+        font-size: 0.8em;
+        height: 2.2em;
+        border-radius: 10px;
+        width: 10em;   
+      }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 550px) { 
+  .contact__form {
+    width: 90vw;
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 550px) and (max-width: 768px) {
+  .contact__form {
+      width: 75vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact__form {
+      width: 60vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__form {
+      width: 50vw;
+  }
+}

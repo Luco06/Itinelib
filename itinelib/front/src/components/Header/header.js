@@ -5,23 +5,12 @@ import './header.scss';
 class Header extends React.Component {
     render() {
       return (
-        <div>
-            <nav class="header">
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/">Itinéraires</NavLink></li>
-                <li><NavLink to="/">Qui sommes-nous ?</NavLink></li>
-                <li><NavLink to="/">Nous contacter</NavLink></li>
-                <form className="jb">
-                    <input 
-                      type="search" 
-                      placeholder="Rechercher" aria-label="Rechercher"
-                    />
-                    <button type="submit">
-                      OK
-                    </button>
-                </form>
-            </nav>
-        </div>
+        <nav className="header__menu">
+          <li className="header__menu__li"><NavLink to="/">Home</NavLink></li>
+          <li className="header__menu__li"><NavLink to="/map">Itinéraires</NavLink></li>
+          <li className="header__menu__li"><NavLink to="/about">Qui sommes-nous ?</NavLink></li>
+          <li className="header__menu__li"><NavLink to="/contact">Nous contacter</NavLink></li>
+        </nav>
       );
     }
   }
