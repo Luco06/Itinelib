@@ -45,6 +45,7 @@
         @media only screen and (min-width:2560px){
             width: 30%;
         }
+        
         .user__h2e{
             border-radius: 10px;
             width: 70%;
@@ -132,14 +133,16 @@
     }
     .footer__menu{
         position: relative;
+        margin-top: 20px;
         @media only screen and (min-height:730px){
-            top: 27px;
+            top:2px;
         }
         @media only screen and (min-height:810px){
-            top: 119px;
+            margin-top: 5px;
+            top: 110px;
         }
         @media only screen and (min-height:1024px){
-            top: 120px;
+            top: 113px;
         }
         @media only screen and (min-height:1360px){
             top: 480px;
