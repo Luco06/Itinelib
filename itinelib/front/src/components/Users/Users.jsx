@@ -54,7 +54,7 @@ class Users extends React.Component {
 
                         </div>
                     </div>
-                    <Footer />
+                   
                 </div>
             </React.Fragment>
         )
