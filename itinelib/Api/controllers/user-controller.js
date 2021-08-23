@@ -2,6 +2,7 @@ const db = require('../models');
 const User = db.User;
 const Itineraries = db.itinerary;
 
+
 class UserController {
 
     getAll = async (req, res) => {
@@ -17,8 +18,8 @@ class UserController {
                 {
                     model: Itineraries,
                     as: 'itinerary',
-                    attributes: [ 'depart', 'arriver', 'ville', 'region', 'transport']
-                }
+                    attributes: [ 'depart', 'arriver', 'ville', 'region', 'transport'],
+                },
             ]
         });
         res.json(data);
