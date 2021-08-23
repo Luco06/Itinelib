@@ -1,5 +1,6 @@
 const db = require('../models');
 const User = db.User;
+const Itineraries = db.itinerary;
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -10,12 +11,14 @@ class UserController {
             console.log(req);
             console.log(req.body.user);
             const email = req.body.email;
+            const lastname= req.body.lastname;
+            const firstname = req.body.firstname;
             let user = await User.findOne({where: {email}});
             if(user) {
                 res.status(400).send('Utilisateur déjà existant')
             } else {
                 const password = await bcrypt.hash(req.body.password, 10);
-                user = {email, password};
+                user = {firstname, lastname, email, password};
                 // = user { email : email, password : password }
                 const data  = await User.create(user)
                 res.json({email: data.email, createdAt: data.createdAt});
