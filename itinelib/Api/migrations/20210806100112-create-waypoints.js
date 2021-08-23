@@ -15,16 +15,16 @@ module.exports = {
         onUpdate: 'CASCADE'
       },
       coordonnesLatD: {
-        type: Sequelize.DECIMAL(10,2)
+        type: Sequelize.STRING
       },
       coordonnesLongD: {
-        type: Sequelize.DECIMAL(10,2)
+        type: Sequelize.STRING
       },
       coordonnesLatA: {
-        type: Sequelize.DECIMAL(10,2)
+        type: Sequelize.STRING
       },
       coordonnesLongA: {
-        type: Sequelize.DECIMAL(10,2)
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
