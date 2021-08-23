@@ -11,6 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      itinerary.hasMany(models.Waypoints,{
+        foreignKey: 'itineraryId',
+        as: 'Waypoints',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      })
     }
   };
   itinerary.init({

@@ -1,15 +1,24 @@
 const db = require('../models');
 const Itineraries = db.itinerary;
+const Waypoints = db.Waypoints;
 
 
 class ItineraryController {
 
     getOne = async (req, res) => {
         const id = req.params.id;
-        const data = await Itineraries.findByPk(id  );
+        const data = await Itineraries.findByPk(id, {
+            include: [
+                {
+                    model: Waypoints,
+                    as: 'Waypoints',
+                    attributes: ['coordonnesLatD', 'coordonnesLongD', 'coordonnesLatA', 'coordonnesLongA']
+                }
+            ]
+        });
         res.json(data);
     }
-    
+
     create = async (req, res) => {
         console.log(req.body.itinerary)
         const new_itinerary = {
@@ -25,7 +34,7 @@ class ItineraryController {
     delete = async (req, res) => {
         const id = req.params.id;
         const data = await Itineraries.destroy({
-            where: {id: id}
+            where: { id: id }
         });
         res.json(data);
     }

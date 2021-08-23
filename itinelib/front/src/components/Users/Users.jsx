@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from '../../assets/images/avatar.png';
+import Logout from '../../assets/images/logout.svg';
 import './users.scss';
-import Footer from '../Footer/footer';
 import Header from '../Header/header';
 
 
@@ -20,9 +20,9 @@ class Users extends React.Component {
         return (
             <React.Fragment>
                 <div className="user__page">
-
                     <Header />
                     <h1 className="user__h1">Bonjour {this.state.prenom}</h1>
+                    <img className="logout" src={Logout} alt="Deconnexion"/>
                     <div className="user">
                         <div className="user__h2e">
                             <h2>Votre Profile</h2>
@@ -54,7 +54,7 @@ class Users extends React.Component {
 
                         </div>
                     </div>
-                    <Footer />
+                   
                 </div>
             </React.Fragment>
         )
