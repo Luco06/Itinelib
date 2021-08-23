@@ -1,41 +1,58 @@
 import React from 'react';
+import axios from 'axios';
 import './register.scss';
-import logo from '../../assets/images/logo.png';
+import { Header, Button } from '../index';
 
+export default class Register extends React.Component {
+    state = {
+        email: "", 
+        password: ""
+    }
 
+    handleEmail = event => {
+        this.setState({email: event.target.value});
+    }
 
-class Register extends React.Component {
+    handlePassword = event => {
+        this.setState({password: event.target.value});
+    }
+    
+    handleSubmit = event => {
+        event.preventDefault();
+    
+        const email = this.state.email;
+        const password = this.state.password;
+    
+        axios.post(`http://localhost:3200/register`, { email, password })
+        .then(res => {
+            console.log(res);
+            console.log(res.data);
+        })
+    }
+
     render() {
-        return (
+        return ( 
             <React.Fragment>
-                
-                <div className="register__page">
-                    <div className="register__container">
-                        <div className="register__logo">
-                            <img className="register__img" src={logo} alt="Itinelib" />
-                        </div>
-                        <h1 className="register__h1">Inscription</h1>
-                        <form className="register__form">
-                            <label className="register__label" htmlFor="">Nom</label>
-                            <input className="register__input" type="text" placeholder="Votre nom" />
-
-                            <label className="register__label" htmlFor="">Prénom</label>
-                            <input className="register__input" type="text" placeholder="Votre prénom" />
-
-                            <label className="register__label" htmlFor="">Email</label>
-                            <input className="register__input" type="email" placeholder="Votre email" />
-
-                            <label className="register__label" htmlFor="">Mot de passe</label>
-                            <input className="register__input" type="password" placeholder="Mot de passe" />
-                            <input className="register__input" type="submit" value="Valider" />
-                        </form>
-                    </div>
-
+                <div className="header__register">
+                    <Header />
                 </div>
-                
+                <h2 className="register__h2">Inscription</h2>
+                <form className="register" method="post" onSubmit={this.handleSubmit}>
+    
+                    <label htmlFor="">Email</label>
+                    <input type="email" name="email" placeholder="Votre email" onChange={this.handleEmail} />
+    
+                    <label htmlFor="">Mot de passe</label>
+                    <input type="password" name="password" placeholder="Votre mot de passe" onChange={this.handlePassword} />
+    
+                    <Button
+                        type="submit" 
+                        size="medium" 
+                        value="S'inscrire" 
+                        color="lightgreen"
+                    />
+                </form>
             </React.Fragment>
         );
     }
 }
-
-export default Register;

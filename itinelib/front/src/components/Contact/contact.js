@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.scss';
-import { Header, Footer } from '../index';
+import { Header, Button } from '../index';
 
 class Contact extends React.Component {
     render() {
@@ -20,15 +20,12 @@ class Contact extends React.Component {
               <input type="text" />
               <label htmlFor="">Votre message</label>
               <textarea name="message" id="message" cols="30" rows="8"></textarea>
-              <section className="contact__submit">
-                <button className="contact__submit--btn" type="submit">
-                  Envoyer
-                </button>
-              </section>
+              <Button 
+                type="button" 
+                size="medium" 
+                value="Envoyer" 
+                color="white"/>
             </form>
-            <div className="contact__footer">
-              <Footer />
-            </div>
         </div>
       );
     }

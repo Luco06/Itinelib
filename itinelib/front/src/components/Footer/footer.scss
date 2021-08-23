@@ -11,8 +11,7 @@
     text-decoration: none;
     list-style-type: none;
     font-size: 0.75em;
-    text-shadow: #EEE 1px 0 10px;
-    margin: 1em 1em 1em 0;
+    margin: 1em 0;
 
     &:hover {
         color: whitesmoke;
@@ -22,4 +21,5 @@
 .footer__menu__li a {
     color: white;
     font-size: 0.8em;
+    margin: 0 1em;
 }

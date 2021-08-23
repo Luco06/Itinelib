@@ -1,0 +1,17 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+	<title>Logo-svg</title>
+	<defs>
+		<image width="400" height="400" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQAQMAAAC6caSPAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAqSURBVHic7cExAQAAAMKg9U/tbwagAAAAAAAAAAAAAAAAAAAAAAAAAIA3T7AAATkWl3gAAAAASUVORK5CYII="/>
+		<image width="512" height="512" id="img2" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c3ZnanM9Imh0dHA6Ly9zdmdqcy5jb20vc3ZnanMiIHZlcnNpb249IjEuMSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im03OC43NzcgMzcuMDIxYTE0Ljc3NyAxNC43NzcgMCAxIDAgLTE0Ljc3NyAxNC43NzkgMTQuNzk1IDE0Ljc5NSAwIDAgMCAxNC43NzctMTQuNzc5em0tMjYuMDU0IDBhMTEuMjc3IDExLjI3NyAwIDEgMSAxMS4yNzcgMTEuMjc5IDExLjI5IDExLjI5IDAgMCAxIC0xMS4yNzctMTEuMjc5eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiIvPjxwYXRoIGQ9Im0xMjMuMzI4IDEyMS4wNjktMTQuMjY2LTM3LjRhMS43NTEgMS43NTEgMCAwIDAgLTEuNjM1LTEuMTI2aC0yN2MuMTY1LS4yNjkuMzI5LS41My40OTQtLjggMTAuMzg5LTE3LjIgMTUuNjE3LTMyLjI0NiAxNS41NDItNDQuNzE0YTMyLjQ2NCAzMi40NjQgMCAwIDAgLTY0LjkyOC0uMDExYy0uMDc1IDEyLjQ3OSA1LjE1MyAyNy41MjcgMTUuNTQyIDQ0LjcyNS4xNjUuMjczLjMyOS41MzQuNDk0LjhoLTI3YTEuNzUxIDEuNzUxIDAgMCAwIC0xLjYzNSAxLjEyNmwtMTQuMjY0IDM3LjRhMS43NDggMS43NDggMCAwIDAgMS42MzUgMi4zNzRoMTE1LjM4NmExLjc0OCAxLjc0OCAwIDAgMCAxLjYzNS0yLjM3NHptLTg4LjI5Mi04NC4wNDhhMjguOTY0IDI4Ljk2NCAwIDEgMSA1Ny45MjguMDFjLjE1IDI0Ljg1OC0yMy4wOSA1NS41MTctMjguOTY0IDYyLjg2OS01Ljg3NC03LjM0OS0yOS4xMTUtMzgtMjguOTY0LTYyLjg3OXptMjcuNjMxIDY2Ljc3OWExLjc1IDEuNzUgMCAwIDAgMi42NjYgMCAxODUuNzE2IDE4NS43MTYgMCAwIDAgMTIuOS0xNy43NTloMjcuOTg3bDIuMjQgNS44NzUtNTQuNjkxIDE5LjQ1MS0xOS40OTQtMjUuMzI5aDE1LjQ5YTE4NS43MTYgMTg1LjcxNiAwIDAgMCAxMi45MDIgMTcuNzYyem0tOC45NTkgMTEuM2guMDFsMzIuNjI3LTExLjYgMTIuNjU1IDE2LjQ0M2gtNTguOXptLTMxLjkzLTI5LjA2Mmg4LjA4bDIwLjQ0MiAyNi41NjItMjAuNjQzIDcuMzQyaC0yMC44MXptODEuNjQzIDMzLjkwNS0xMy42MDktMTcuNjgyIDE5LjktNy4wNzcgOS40NDMgMjQuNzU5eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiIvPjwvZz48L2c+PC9zdmc+Cg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 65px;fill: #ffffff;font-weight: 700;font-family: "Quicksand-Bold", "Quicksand" } 
+	</style>
+	<use id="img1" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+	<use id="location" href="#img2" transform="matrix(0.51,0,0,0.51,69,40)"/>
+	<text id="Itinelib " style="transform: matrix(1,-0.002,0.002,1,11,307.314)" >
+		<tspan x="83.687" y="45.5" class="txt0">I</tspan><tspan  y="45.5" class="txt0">t</tspan><tspan  y="45.5" class="txt0">i</tspan><tspan  y="45.5" class="txt0">n</tspan><tspan  y="45.5" class="txt0">e</tspan><tspan  y="45.5" class="txt0">l</tspan><tspan  y="45.5" class="txt0">i</tspan><tspan  y="45.5" class="txt0">b</tspan><tspan  y="45.5" class="txt0">
+</tspan>
+	</text>
+</svg>

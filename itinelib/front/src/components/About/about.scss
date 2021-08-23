@@ -1,3 +1,5 @@
+@import 'src/styles/vars';
+
 .about__content {
     height: 40vh;
     width: 70vw;
@@ -10,13 +12,42 @@
     padding: 1em;
 
     & h1 {
-        font-size: 1em;
-        margin: 1em auto 2em auto;
+        margin: 2em auto 1em auto;
     }
 
     & p {
-        font-size: 0.7em;
+        font-size: 0.6em;
         line-height: 1.5;
         margin-bottom: 0.5em;
+    }
+}
+
+.about__team {
+    display: flex;
+    justify-content: center;
+    
+    &__card {
+        margin: 0.5em;
+        height: 250px;
+        width: 150px;
+
+        & img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 0.5em;
+        }
+
+        & h2 {
+            font-weight: 500;
+        }
+
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+
+        & i {
+            margin: 0.5em;
+        }
     }
 }

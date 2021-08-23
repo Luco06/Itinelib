@@ -16,9 +16,15 @@
     justify-content: center;
 }
 
+.body__logo {
+    margin: auto;
+    width: 6em;
+}
+
 .body__title {
     font-family: 'Quicksand', sans-serif;
     font-size: 0.7em;
+    text-align: center;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -34,9 +40,9 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 550px) and (max-width: 768px) {
+@media (min-width: 550px) {
     .header__menu {
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 }
