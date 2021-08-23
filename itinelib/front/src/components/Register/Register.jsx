@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './register.scss';
-import { Header, Button } from '../index';
+import { Button } from '../index';
 import logo from '../../assets/images/logo.png'
 
 export default class Register extends React.Component {
