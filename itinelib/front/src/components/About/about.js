@@ -13,9 +13,9 @@ class About extends React.Component {
             <Header />
             <section className="about__content">
                 <h1>Qui sommes-nous ?</h1>
-                <p>L'application Itinelib est votre meilleur allié quand vous êtes en vacances et que vous souhaitez faire une balade en vélo, en quad ou tout simplement à pied.</p>
+                <p>L'application Itinelib est votre meilleur allié quand vous planifiez de partir en vacances, en famille ou entre amis, ou bien lors d'un déplacement professionnel.</p>
                     
-                <p>Nous avons créé Itinelib pour tous les aventuriers, les amoureux de la nature et du plein air. C'est un service collaboratif où chaque personne pourra partager ses propres itinéraires et consulter ceux des autres utilisateurs.</p>
+                <p>Nous avons créé Itinelib pour tous les aventuriers de la route. C'est un service collaboratif où chaque personne pourra partager ses propres itinéraires et consulter ceux des autres utilisateurs.</p>
 
                 <p>Alors, qu'attendez-vous pour rejoindre la communauté ?</p>
 

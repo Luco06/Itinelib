@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/Logo-svg.svg';
 import './login.scss';
-import { Header } from '../index'
+import { Header } from '../index';
 
 export class Login extends React.Component {
    
     onSubmitHandler(event) {
         event.preventDefault();
+
     }
     render() {
         return (
