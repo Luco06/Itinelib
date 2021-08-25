@@ -13,15 +13,25 @@ export class Login extends React.Component {
     render() {
         return (
             <React.Fragment>
+<<<<<<< HEAD
                 <Header />
                
                 <div className="login__page">
 
+=======
+                <div className="login__page">
+
+                    <Header />
+>>>>>>> 194490a640befdbf7de24255fd90c8528f5643e4
                     <div className="login__container">
                         <div className="login__logo">
                             <img className="login__img" src={logo} alt="Itinelib" />
                         </div>
+<<<<<<< HEAD
                         <h1 className="login__h1">Bienvenue sur Itinelib</h1>
+=======
+                        <h1 className=" login__h1">Connectez-vous</h1>
+>>>>>>> 194490a640befdbf7de24255fd90c8528f5643e4
                         <form onSubmit={this.onSubmitHandler} className="login__form">
 
                             <div className="login__email">
@@ -38,6 +48,7 @@ export class Login extends React.Component {
 
                             </div>
 
+<<<<<<< HEAD
                             <Button 
                                 type="submit" 
                                 size="small"
@@ -53,6 +64,11 @@ export class Login extends React.Component {
                                 color="lightgreen"
                             />
                         </NavLink>
+=======
+                            <button className="login__button" type="submit">Se connecter</button>
+                        </form>
+                        <p className="login__p"> <a href="inscription">Vous n'avez pas de compte?</a></p>
+>>>>>>> 194490a640befdbf7de24255fd90c8528f5643e4
                     </div>
                 </div>
                 

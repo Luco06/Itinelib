@@ -1,15 +1,19 @@
 .login__page{
-   
-    padding: 50px;
     height: 100vh;
     background-color: #63d471;
     background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    @media only screen and (min-width:320px){
+        height: 100%;
+    }
+    @media only screen and (min-width:410px){
+       height: 100vh;
+    }
     .login__container{
         background: rgba(255, 255, 255,0.2);
         backdrop-filter: blur(30px);
         border: 2px solid rgba(255, 255, 255,0.1);
         padding: 5%;
-        margin-top: 40%;
+        margin-top: 20%;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px ;
