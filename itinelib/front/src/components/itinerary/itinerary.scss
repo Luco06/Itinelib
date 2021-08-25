@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	height: 95vh;
+	z-index: 1;
 	// overflow: hidden;
 	// img {
 	// 	width: 100%;
@@ -9,6 +10,38 @@
 }
 .leaflet-container {
 	height: 100%;
+	z-index: 1;
 	// width: 90vw;
 	// width: 100vw;
+}
+
+.leaflet-routing-alternatives-container {
+	background-color: white;
+	opacity: 0.6;
+	font-size: 1.3em;
+	width: 30vw;
+	height: 34vh;
+	overflow: scroll;
+
+	// width: 29em;
+	// height: 29em;
+
+	h2 {
+		font-size: 2em;
+	}
+
+	tr:before {
+		content: "> ";
+		// content: "<img src='../../assets/images/right-arrow.png'></img>";
+		width: 0.1em;
+	}
+
+	img {
+		width: 0.1em;
+	}
+}
+
+.addItineraryForm {
+	position: relative;
+	z-index: 20;
 }

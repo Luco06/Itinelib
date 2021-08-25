@@ -1,0 +1,49 @@
+.addItinerary__form {
+	height: 25em;
+	width: 25em;
+	position: absolute;
+	opacity: 0.8;
+	left: 36vw;
+	top: 36vh;
+	z-index: 5;
+	background-color: red;
+	padding: 2em;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+
+	input {
+		margin: 2em;
+		opacity: 1;
+	}
+
+	label {
+		font-weight: bold;
+	}
+}
+
+.bWZouD {
+	background-color: whitesmoke;
+}
+
+// .test {
+// 	background-color: purple;
+// }
+.rmd-listbox {
+	background-color: whitesmoke;
+	z-index: 30;
+	overflow: scroll;
+}
+
+.transportForm {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	figure {
+		display: inline-block;
+	}
+	img {
+		width: 2em;
+		height: 2em;
+	}
+}
