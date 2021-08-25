@@ -1,5 +1,5 @@
 import React from 'react';
-import {SearchRoad, Header, RoutingMap, AddItineraryForm} from './../index';
+import {SearchRoad, Header, RoutingMap, AddItinerary} from './../index';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import './itinerary.scss';
 import 'leaflet/dist/leaflet.css';
@@ -14,7 +14,7 @@ function Itinerary(props){
             
                 <Header />
                 <div className="addItineraryForm">
-                <AddItineraryForm  />
+                <AddItinerary  />
 
                 </div>
                 <section className="itinerary__mapContainer">

@@ -1,21 +1,20 @@
-import { useForm } from "react-hook-form";
 import './searchRoad.scss';
-import { Button, useDebounce } from '../../index'
+import { useDebounce } from '../../index'
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import { AutoComplete } from "@react-md/autocomplete";
+
+import SearchRoadForm from "./searchRoadForm/SearchRoadForm";
 
 
 
-
-function SearchRoad(props){
-
-    const { register, handleSubmit, watch, errors } = useForm();
-    
+function SearchRoad(props){    
     const [ city, setCity ] = useState([])
     const [ searchValue, setSearchValue ] = useState('')
-    const [ listItinerary, setListItinerary ] = useState([])
     const [ isSearching, setIsSearching ] = useState(false);
+    const [ transport, setTransport] = useState()
+    const [ listOption, setListOption ] = useState([]);
+
+
 
 
     const debouncedSearchTerm = useDebounce(searchValue, 1000);
@@ -29,68 +28,35 @@ function SearchRoad(props){
             getCity(debouncedSearchTerm).then((results) => {
               setIsSearching(false);
               setCity(results);
+              setListOption(results)
             });
           } else {
+            setListOption([])
             setCity([]);
             setIsSearching(false);
           }
         },
-        [debouncedSearchTerm] // Only call effect if debounced search term changes
+        [debouncedSearchTerm] 
       );
 
 
+      const displayListOption = listOption.map((e,i) => <option key={i} value={e.properties.label}/>)
 
-    let timeout = null;
 
-   const delayBeforeSendingRequest = (e) => {
-       setCity([])
-        clearTimeout(timeout)
-        let research = e.target.value
-        if(research && research.length > 3 ){
-            setSearchValue(research)
-
-            timeout = setTimeout(async()=>{
-                await axios.get(`https://api-adresse.data.gouv.fr/search/?q=${e.target.value}&limit=100`)
-                .then(el => el.data.features.map(adress => {
-                    setCity(old => [...old,adress])
-                }))
-            },1000)
+    const onSubmit = (event) =>{
+        event.preventDefault()        
+        if (city){
+            //post de transport[0]
         }
-    }
-    
-    const onSubmit = (data) =>{
-        console.log('oui')
-        const address = data.city.replaceAll(' ','+')
-        const region = data.region;
-        const transport = data.transport;
-
-        if (region && !address){
-            // .then(data => setListItinerary(data))
-            // faire un filter sur la liste pour afficher seulement ceux avec le bon moyen de transport
-        }
-        else if (region && address){
-            // axios.get('') Tous les itinéraire de la région
-            // Faire un filter + include avec tous les itinéraire qui contiennent le nom des rue
-                // + le moyen de transport
-            // .then(data => setListItinerary(data))
-        }
-
-        // getCity(address)
     } 
-
-    const rere = city.map(e => e.properties.label)
-
-
 
     const getCity = (address)=>{
         try{
             return axios.get(`https://api-adresse.data.gouv.fr/search/?q=${address}`)
                         .then(el => el.data.features.map(adress => {
-                            // console.log(address)
-                            // setCity(adress.properties.label)
+                            setCity(address)
                             return adress
                         }))
-                        // .then(el => el.data)
                         .catch(e => {
                             console.log(e) 
                             return[]
@@ -101,41 +67,28 @@ function SearchRoad(props){
         }
     }
 
+    const addTransport = (event, transport) => {
+        setTransport(transport)  
+      }
 
+      const searchAddress = (event) => {
+        setSearchValue('')
+        setSearchValue(event.target.value)
+        if (event.target.value){
+            const searchedAddress = city.filter(e => e.properties.label == event.target.value)
+                        setCity(searchedAddress)
+
+        }
+      }
 
     return(
-        <form className="searchRoad__form" >
-        {/* <form className="searchRoad__form" onSubmit={handleSubmit(onSubmit)}> */}
-            <div className="searchRoad__form__inputContainer">
-                <label htmlFor="searchRegion"> Région</label>
-                <input type="text" id='searchRegion' {...register('region')} />
-            </div>
-
-            <div className="searchRoad__form__inputContainer">
-                <label htmlFor="searchCity"> Ville</label>
-                {/* <input onChange={e => setSearchValue(e.target.value)} type="text" id='searchCity'  /> */}
-                {/* <input onChange={e => setSearchValue(e.target.value)} {...register('city')} type="text" id='searchCity'  /> */}
-                <AutoComplete
-                    id="searchCity"
-                    name="arrival"
-                    label="Point d'arrivée"
-                    placeholder="Exemple : 18 rue de..."
-                    data={rere}
-                    onChange={( e => setSearchValue(e.target.value))}
-                    // {...register('arrival')}
-                />
-            </div>
-            {console.log(city)}
-            {console.log(searchValue)}
-
-            <div className="searchRoad__form__inputContainer" >
-                <label htmlFor="SearchTransport"> Transport</label>
-                <input type="text" id='SearchTransport' {...register('transport')} />
-            </div>
-
-            <Button id="searchRoad__form__inputSubmit" type="submit" size="medium" value="Envoyer" color="green" />
-
-        </form> 
+        <SearchRoadForm
+        onSubmit={onSubmit}
+        searchAddress={searchAddress}
+        listOption={listOption}
+        displayListOption={displayListOption}
+        addTransport={addTransport}
+        />
     )
 }
 

@@ -12,5 +12,5 @@ export {default as Users} from './Users/Users';
 export {default as Map} from './Map/map';
 export {default as RoutingMap} from './itinerary/routingMap/RoutingMap';
 export {default as SearchRoad} from './itinerary/searchRoad/SearchRoad';
-export {default as AddItineraryForm} from './itinerary/addItinerary/AddItineraryForm';
+export {default as AddItinerary} from './itinerary/addItinerary/AddItinerary';
 export {default as useDebounce} from './Debounce/useDebounce';
