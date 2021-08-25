@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from '../../assets/images/Logo-svg.svg';
+import { Header, Button } from '../index';
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
 import './login.scss';
-import { Header } from '../index';
 
 
 export class Login extends React.Component {
 
     onSubmitHandler(event) {
         event.preventDefault();
-
     }
     render() {
         return (
             <React.Fragment>
                 <Header />
-                <div className="login__container">
-                    <div className="login__logo">
-                        <img src={logo} alt="Itinelib" />
-                    </div>
-                    <h1>Connectez-vous</h1>
-                    <form onSubmit={this.onSubmitHandler} className="login__form">
+               
+                <div className="login__page">
+
+                    <div className="login__container">
+                        <div className="login__logo">
+                            <img className="login__img" src={logo} alt="Itinelib" />
+                        </div>
+                        <h1 className="login__h1">Bienvenue sur Itinelib</h1>
+                        <form onSubmit={this.onSubmitHandler} className="login__form">
 
                             <div className="login__email">
 
@@ -35,10 +38,24 @@ export class Login extends React.Component {
 
                             </div>
 
-                            <button className="login__button" type="submit">Se connecter</button>
-                    </form>
-                    <p className="login__p"> <a href="inscription">Vous n'avez pas de compte?</a></p>
+                            <Button 
+                                type="submit" 
+                                size="small"
+                                value="Se connecter" 
+                                color="lightgreen"
+                            />
+                        </form>
+                        <NavLink to="/inscription">
+                            <Button 
+                                type="button" 
+                                size="small" 
+                                value="Vous n'avez pas de compte ?" 
+                                color="lightgreen"
+                            />
+                        </NavLink>
+                    </div>
                 </div>
+                
             </React.Fragment>
         )
     }

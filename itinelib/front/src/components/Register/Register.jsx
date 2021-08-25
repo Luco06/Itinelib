@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './register.scss';
-import { Button } from '../index';
+import { Header, Button } from '../index';
 import logo from '../../assets/images/logo.png'
 
 export default class Register extends React.Component {
@@ -44,6 +44,7 @@ export default class Register extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <Header />
                 <div className="register__page">
                     <div className="register__container">
                         <div className="register__logo">
