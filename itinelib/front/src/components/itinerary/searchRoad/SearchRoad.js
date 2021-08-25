@@ -2,10 +2,9 @@ import './searchRoad.scss';
 import { useDebounce } from '../../index'
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+import ItineraryList from '../itineraryList/ItineraryList';
 
 import SearchRoadForm from "./searchRoadForm/SearchRoadForm";
-
-
 
 function SearchRoad(props){    
     const [ city, setCity ] = useState([])
@@ -14,12 +13,7 @@ function SearchRoad(props){
     const [ transport, setTransport] = useState()
     const [ listOption, setListOption ] = useState([]);
 
-
-
-
     const debouncedSearchTerm = useDebounce(searchValue, 1000);
-
-
 
     useEffect(
         () => {
