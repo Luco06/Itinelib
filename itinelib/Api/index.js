@@ -16,6 +16,6 @@ app.get('/', (req, res) => {
     res.json({message : "Welcome !"})
 });
 
-app.listen( process.env.DATABASE_URL || port, () =>{
+app.listen(port, () =>{
     console.log('Server is runing on port', port);
 })
