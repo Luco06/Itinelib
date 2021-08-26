@@ -24,7 +24,7 @@ export default class Register extends React.Component {
 
         const email = this.state.email;
         const password = this.state.password;
-        axios.post(`http://localhost:3200/register`, { email, password })
+        axios.post(`postgres://phhxvprqafhbtd:68c3332a0b1e0952a48e22d0a207db20f942d0e19c19911cb92635e83bef2fcc@ec2-52-19-96-181.eu-west-1.compute.amazonaws.com:5432/d9i9ou93scelub`, { email, password })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -58,7 +58,7 @@ export default class Register extends React.Component {
                     </form>
                     <section className="register__back">
                         <NavLink to="/login">
-                            <p><i class="fas fa-undo"></i>Revenir à la connexion</p>
+                        <p><i class="fas fa-undo"></i>Revenir à la connexion</p>
                         </NavLink>
                     </section>
                 </div>
