@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './register.scss';
 import { Header, Button } from '../index';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/images/Logo-svg.svg';
 
 export default class Register extends React.Component {
@@ -54,7 +55,12 @@ export default class Register extends React.Component {
                             value="S'inscrire" 
                             color="white"
                         />
-                        </form>
+                    </form>
+                    <section className="register__back">
+                        <NavLink to="/login">
+                            <p><i class="fas fa-undo"></i>Revenir à la connexion</p>
+                        </NavLink>
+                    </section>
                 </div>
             </React.Fragment>
         );

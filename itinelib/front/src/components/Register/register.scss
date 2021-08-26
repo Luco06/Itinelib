@@ -3,6 +3,7 @@
 .register {
     align-items: center;
     background-color: $green7;
+    height: 100vh;
 
     &__header {
       color: white;
@@ -48,6 +49,20 @@
         border-radius: 10px;
       }
     }
+
+    &__back {
+      display: flex;
+      justify-content: center;
+
+      & i {
+          margin-right: 0.2em;
+          color: white;
+      }
+
+      & p {
+        color: white;
+      }
+  }
 }
 
 
