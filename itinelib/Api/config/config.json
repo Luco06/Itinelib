@@ -15,10 +15,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "itinelib_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "qqskdxogmnpnzu",
+    "password": "acdd4842af3903fb9001b143820c8a409cea746188e45e936f206d9458d33715",
+    "database": "d86gqibbcdes04",
+    "host": "ec2-52-50-171-4.eu-west-1.compute.amazonaws.com",
+    "dialect": "mysql",
+    "port": 5432
   }
 }
