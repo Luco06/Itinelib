@@ -42,15 +42,21 @@ function AddItinerary(props){
         [debouncedSearchTerm] 
       );
      
-    const onSubmit = (data) =>{
-   
-           setDepartureLocation({x:departure[0].geometry.coordinates[0], y:departure[0].geometry.coordinates[1]})
-           setArrivalLocation({x:arrival[0].geometry.coordinates[0], y:arrival[0].geometry.coordinates[1]})
-        if(departure && arrival && transport){
-            // console.log(transport)
-            // console.log(departure[0])
-            // console.log(arrival)
-        }
+    const onSubmit = (event) =>{
+        event.preventDefault()
+
+   try{
+       setDepartureLocation({x:departure[0].geometry.coordinates[0], y:departure[0].geometry.coordinates[1]})
+       setArrivalLocation({x:arrival[0].geometry.coordinates[0], y:arrival[0].geometry.coordinates[1]})
+    if(departure && arrival && transport){
+        // console.log(transport)
+        // console.log(departure[0])
+        // console.log(arrival)
+    }
+   }
+   catch(e){
+       console.log(e)
+   }
     } 
 
     const getAddress = async(addressValue)=>{
