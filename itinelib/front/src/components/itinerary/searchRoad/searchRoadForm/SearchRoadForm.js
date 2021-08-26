@@ -11,7 +11,7 @@ export default function SearchRoadForm (props){
 
 
     return(
-        <form className="searchRoad__form" onSubmit={handleSubmit(props.onSubmit)}>
+        <form className="searchRoad__form" onSubmit={props.onSubmit}>
             <div className="searchRoad__form__inputContainer">
                 <label htmlFor="searchCity"> Taper une Ville</label>
                 <input 
@@ -22,7 +22,6 @@ export default function SearchRoadForm (props){
                     placeholder="Exemple : 18 rue de..."
                     onChange={props.searchAddress}
                     list="cityList"
-                    {...register("city")}
                 />
                 {
                             props.listOption.length > 0 ?

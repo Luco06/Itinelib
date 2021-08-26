@@ -38,6 +38,7 @@ function SearchRoad(props){
 
 
     const onSubmit = (event) =>{
+        console.log(event)
         event.preventDefault()        
         if (city){
             //post de transport[0]

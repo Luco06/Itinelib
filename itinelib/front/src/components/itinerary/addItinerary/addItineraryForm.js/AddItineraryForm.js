@@ -12,7 +12,7 @@ function AddItineraryForm(props){
 
     return(
         <>
-            <form className="addItinerary__form" onSubmit={handleSubmit(props.onSubmit)} >
+            <form className="addItinerary__form" onSubmit={props.onSubmit} >
 
                 <div className="searchRoad__form__inputContainer">
                     <label>Point de départ</label>
@@ -23,7 +23,7 @@ function AddItineraryForm(props){
                     placeholder="Exemple : 18 rue de..."
                     onChange={props.searchAddress}
                     list="departureList"
-                    {...register("departure")}
+                    // {...register("departure")}
 
                     />
                     {
@@ -45,7 +45,7 @@ function AddItineraryForm(props){
                         placeholder="Exemple : 18 rue de..."
                         onChange={props.searchAddress}
                         list="arrivalList"
-                        {...register("arrival")}
+                        // {...register("arrival")}
 
                     />
                     {
