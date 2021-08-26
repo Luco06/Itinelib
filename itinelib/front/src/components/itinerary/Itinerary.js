@@ -1,5 +1,5 @@
 import React from 'react';
-import {SearchRoad, Header } from './../index';
+import {SearchRoad, Header, RoutingMap, AddItinerary} from './../index';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import './itinerary.scss';
 import 'leaflet/dist/leaflet.css';
@@ -7,14 +7,15 @@ import 'leaflet/dist/leaflet.css';
 
 function Itinerary(props){
     return(
-        <main className="itinerary__container">
-            {/* <div className="road__formContainer">
-            </div> */}
-            
+        <main className="itinerary__container">            
                 <Header />
-            <section className="itinerary__mapContainer">
+                <div className="addItineraryForm">
+                <AddItinerary  />
+
+                </div>
+                <section className="itinerary__mapContainer">
                 <SearchRoad />
-                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
                     <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -24,6 +25,7 @@ function Itinerary(props){
                     A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker>
+                <RoutingMap />
                 </MapContainer>
             </section> 
         </main>

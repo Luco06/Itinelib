@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@react-leaflet/core": "^1.1.0",
+    "@react-md/autocomplete": "^3.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "leaflet": "^1.7.1",
+    "leaflet-routing-machine": "^3.2.12",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -16,6 +18,7 @@
     "react-leaflet": "^3.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-search-autocomplete": "^5.4.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
