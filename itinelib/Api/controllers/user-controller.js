@@ -11,14 +11,12 @@ class UserController {
             console.log(req);
             console.log(req.body.user);
             const email = req.body.email;
-            const lastname= req.body.lastname;
-            const firstname = req.body.firstname;
             let user = await User.findOne({where: {email}});
             if(user) {
                 res.status(400).send('Utilisateur déjà existant')
             } else {
                 const password = await bcrypt.hash(req.body.password, 10);
-                user = {firstname, lastname, email, password};
+                user = {email, password};
                 // = user { email : email, password : password }
                 const data  = await User.create(user)
                 res.json({email: data.email, createdAt: data.createdAt});
@@ -61,10 +59,10 @@ class UserController {
          }
     }
 
-    // getAll = async (req, res) => {
-    //     const data = await User.findAll();
-    //     res.json(data);
-    // }
+    getAll = async (req, res) => {
+        const data = await User.findAll();
+        res.json(data);
+    }
 
     getOne = async (req, res) => {
         const id = req.params.id;
