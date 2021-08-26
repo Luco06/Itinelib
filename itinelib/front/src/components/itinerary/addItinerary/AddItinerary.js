@@ -29,7 +29,6 @@ function AddItinerary(props){
           if (debouncedSearchTerm) {
             setIsSearching(true);
             getAddress(debouncedSearchTerm).then((results) => {
-            //   createListe(results)
             setListOption(results)
               setIsSearching(false);
               setAddress(results);
@@ -48,9 +47,9 @@ function AddItinerary(props){
            setDepartureLocation({x:departure[0].geometry.coordinates[0], y:departure[0].geometry.coordinates[1]})
            setArrivalLocation({x:arrival[0].geometry.coordinates[0], y:arrival[0].geometry.coordinates[1]})
         if(departure && arrival && transport){
-            console.log(transport)
-            console.log(departure[0])
-            console.log(arrival)
+            // console.log(transport)
+            // console.log(departure[0])
+            // console.log(arrival)
         }
     } 
 

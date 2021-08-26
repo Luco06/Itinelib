@@ -7,11 +7,7 @@ import 'leaflet/dist/leaflet.css';
 
 function Itinerary(props){
     return(
-        <main className="itinerary__container">
-            {/* <div className="road__formContainer">
-            </div> */}
-            
-            
+        <main className="itinerary__container">            
                 <Header />
                 <div className="addItineraryForm">
                 <AddItinerary  />

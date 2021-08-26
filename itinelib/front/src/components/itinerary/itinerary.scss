@@ -22,17 +22,12 @@
 	width: 30vw;
 	height: 34vh;
 	overflow: scroll;
-
-	// width: 29em;
-	// height: 29em;
-
 	h2 {
 		font-size: 2em;
 	}
 
 	tr:before {
 		content: "> ";
-		// content: "<img src='../../assets/images/right-arrow.png'></img>";
 		width: 0.1em;
 	}
 
