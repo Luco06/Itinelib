@@ -29,6 +29,10 @@ export default class Register extends React.Component {
                 console.log(res);
                 console.log(res.data);
             })
+            .catch(function (erreur) {
+                //On traite ici les erreurs éventuellement survenues
+                console.log(erreur);
+            });
     }
 
     render() {
@@ -48,6 +52,8 @@ export default class Register extends React.Component {
                         <label className="register__label" htmlFor="">Mot de passe</label>
                         <input className="register__input" name="password" type="password" placeholder="Mot de passe" onChange={this.handlePassword} />
 
+                        <input type="submit" value="S'inscrire" />
+
                         <Button
                             className="register__submit" 
                             type="submit" 
@@ -66,3 +72,4 @@ export default class Register extends React.Component {
         );
     }
 }
+
