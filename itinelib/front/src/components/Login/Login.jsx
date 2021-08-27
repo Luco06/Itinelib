@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header, Button } from '../index';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/images/Logo-svg.svg';
 import './login.scss';
 
@@ -35,7 +36,9 @@ export class Login extends React.Component {
                         />
                     </form>
                     <p>
-                        <a href="inscription">Vous n'avez pas de compte?</a>
+                        <NavLink to="/inscription">
+                            Vous n'avez pas de compte?
+                        </NavLink>
                     </p>
                 </div>
             </React.Fragment>

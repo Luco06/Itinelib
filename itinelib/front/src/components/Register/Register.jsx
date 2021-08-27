@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './register.scss';
 import { Header, Button } from '../index';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/images/Logo-svg.svg';
 
 export default class Register extends React.Component {
@@ -23,11 +24,15 @@ export default class Register extends React.Component {
 
         const email = this.state.email;
         const password = this.state.password;
-        axios.post(`http://localhost:3200/register`, { email, password })
+        axios.post(`https://git.heroku.com/itinelibapi.git`, { email, password })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
             })
+            .catch(function (erreur) {
+                //On traite ici les erreurs éventuellement survenues
+                console.log(erreur);
+            });
     }
 
     render() {
@@ -47,6 +52,8 @@ export default class Register extends React.Component {
                         <label className="register__label" htmlFor="">Mot de passe</label>
                         <input className="register__input" name="password" type="password" placeholder="Mot de passe" onChange={this.handlePassword} />
 
+                        <input type="submit" value="S'inscrire" />
+
                         <Button
                             className="register__submit" 
                             type="submit" 
@@ -54,9 +61,15 @@ export default class Register extends React.Component {
                             value="S'inscrire" 
                             color="white"
                         />
-                        </form>
+                    </form>
+                    <section className="register__back">
+                        <NavLink to="/login">
+                        <p><i class="fas fa-undo"></i>Revenir à la connexion</p>
+                        </NavLink>
+                    </section>
                 </div>
             </React.Fragment>
         );
     }
 }
+

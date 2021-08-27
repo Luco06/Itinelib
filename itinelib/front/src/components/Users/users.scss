@@ -9,9 +9,13 @@
     }
 
     &__logout {
-        width: 2em;
-        margin: 0.5em auto;
-        display: block;
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+
+        & i {
+            margin-right: 0.2em;
+        }
     }
 
     &__avatar {
@@ -20,15 +24,6 @@
         flex-direction: column;
         margin-bottom: 2em;
         justify-content: center;
-
-        & img {
-            width: 5em;
-            margin: auto;
-        }
-
-        & p {
-            margin: 0.5em auto;
-        }
     }
     
     &__infos {
@@ -56,6 +51,21 @@
             margin: 0.5em 0;
             font-size: 0.8em;
             text-align: center;
+            color: white;
+        }
+
+        & img {
+            width: 5em;
+            margin: auto;
+        }
+
+        & form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & p {
+            margin: 0.5em auto;
             color: white;
         }
     }
