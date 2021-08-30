@@ -2,6 +2,8 @@ import { useForm } from "react-hook-form";
 import './addItinerary.scss';
 import { useDebounce } from '../../index'
 import AddItineraryForm from './addItineraryForm.js/AddItineraryForm'
+import { connect } from "react-redux";
+
 
 
 import axios from 'axios';
@@ -101,6 +103,8 @@ function AddItinerary(props){
     }
         
         return(
+            <>
+            {props.toggleItinerary ?
             <AddItineraryForm
                 onSubmit={onSubmit}
                 searchAddress={searchAddress}
@@ -108,7 +112,16 @@ function AddItinerary(props){
                 displayListOption={displayListOption}
                 addTransport={addTransport}
             />
+            :
+            null
+        }
+            {console.log("props add",props)}
+            </>
     )
 }
 
-export default AddItinerary
+export default connect((state)=>{
+    return {
+        toggleItinerary:state.toggleItinerary
+    }
+})(AddItinerary)

@@ -6,6 +6,7 @@ import LogoWalk from '../../../../assets/images/quad.svg'
 
 
 
+
 function AddItineraryForm(props){
 
     const { register, handleSubmit, watch, errors } = useForm();

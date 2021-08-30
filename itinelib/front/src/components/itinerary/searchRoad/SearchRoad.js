@@ -3,10 +3,12 @@ import { useDebounce } from '../../index'
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import ItineraryList from '../itineraryList/ItineraryList';
+import { connect } from "react-redux";
+
 
 import SearchRoadForm from "./searchRoadForm/SearchRoadForm";
 
-function SearchRoad(props){    
+function SearchRoad({dispatch}){    
     const [ city, setCity ] = useState([])
     const [ searchValue, setSearchValue ] = useState('')
     const [ isSearching, setIsSearching ] = useState(false);
@@ -77,6 +79,7 @@ function SearchRoad(props){
       }
 
     return(
+      <>
         <SearchRoadForm
         onSubmit={onSubmit}
         searchAddress={searchAddress}
@@ -84,7 +87,8 @@ function SearchRoad(props){
         displayListOption={displayListOption}
         addTransport={addTransport}
         />
+        </>
     )
 }
 
-export default SearchRoad
+export default connect()(SearchRoad)

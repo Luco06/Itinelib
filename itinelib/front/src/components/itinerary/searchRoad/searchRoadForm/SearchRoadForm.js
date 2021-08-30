@@ -3,13 +3,18 @@ import LogoBike from '../../../../assets/images/bike.svg'
 import LogoQuad from '../../../../assets/images/walk.svg'
 import LogoWalk from '../../../../assets/images/quad.svg'
 import { useForm } from "react-hook-form";
+import { connect } from "react-redux";
+import {displayaddItineray} from '../../../../redux/actions'
 
-
-export default function SearchRoadForm (props){
+function SearchRoadForm (props){
 
     const { register, handleSubmit, watch, errors } = useForm();
 
 
+    const toggleAdd = () => {
+        props.dispatch(displayaddItineray())
+        console.log(props)
+    }
     return(
         <form className="searchRoad__form" onSubmit={props.onSubmit}>
             <div className="searchRoad__form__inputContainer">
@@ -31,7 +36,10 @@ export default function SearchRoadForm (props){
                         : null
                         }
 
+                        {console.log("dispatch",props.dispatch)}
+
             </div>
+
 
             <div className="addItinerary__form__inputContainer transportForm" >
                             <figure>
@@ -52,6 +60,18 @@ export default function SearchRoadForm (props){
 
             <Button id="searchRoad__form__inputSubmit" type="submit" size="medium" value="Envoyer" color="green" />
 
+
+                    <div>
+                        <button onClick={toggleAdd}>Ajouter un itineraire</button>
+                    </div>
         </form>
     )
 }
+
+
+export default connect((state)=>{
+    console.log(state)
+    return {
+        toggleItinerary:state.toggleItinerary
+    }
+})(SearchRoadForm)

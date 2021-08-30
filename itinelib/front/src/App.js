@@ -2,7 +2,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { Itinerary, Users, Login, Register, Home, About, Contact, Avatar, AvatarPage} from "./components/index.js"
 
 
-
 function App() {
 
   return (
