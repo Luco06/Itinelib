@@ -3,6 +3,7 @@ import './addItinerary.scss';
 import { useDebounce } from '../../index'
 import AddItineraryForm from './addItineraryForm.js/AddItineraryForm'
 import { connect } from "react-redux";
+import {changeItinerary} from '../../../redux/actions'
 
 
 
@@ -50,10 +51,17 @@ function AddItinerary(props){
    try{
        setDepartureLocation({x:departure[0].geometry.coordinates[0], y:departure[0].geometry.coordinates[1]})
        setArrivalLocation({x:arrival[0].geometry.coordinates[0], y:arrival[0].geometry.coordinates[1]})
+    //    console.log('hahah',props)
     if(departure && arrival && transport){
-        // console.log(transport)
-        // console.log(departure[0])
-        // console.log(arrival)
+        const tab = [departureLocation,arrivalLocation]
+        console.log(transport)
+        console.log(departureLocation)
+        console.log(arrivalLocation)
+        props.dispatch(changeItinerary(tab))
+        // console.log([departureLocation.x,arrivalLocation])
+    }
+    else{
+        return null
     }
    }
    catch(e){
@@ -104,24 +112,24 @@ function AddItinerary(props){
         
         return(
             <>
-            {props.toggleItinerary ?
-            <AddItineraryForm
-                onSubmit={onSubmit}
-                searchAddress={searchAddress}
-                listOption={listOption}
-                displayListOption={displayListOption}
-                addTransport={addTransport}
-            />
-            :
-            null
-        }
-            {console.log("props add",props)}
+                {props.toggleItinerary ?
+                    <AddItineraryForm
+                        onSubmit={onSubmit}
+                        searchAddress={searchAddress}
+                        listOption={listOption}
+                        displayListOption={displayListOption}
+                        addTransport={addTransport}
+                    />
+                :
+                    null
+                }
             </>
     )
 }
 
 export default connect((state)=>{
     return {
-        toggleItinerary:state.toggleItinerary
+        toggleItinerary:state.toggleItinerary,
+        itineraryWaypoint:state.itineraryWaypoint
     }
 })(AddItinerary)

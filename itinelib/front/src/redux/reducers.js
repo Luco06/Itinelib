@@ -16,17 +16,17 @@ export const toggleItinerary = (state = false, action) => {
 
 }
 
-export const itineraryWaypoint = (state = {departureWaypoint:{x:null,y:null}, arrivalWaypoint:{x:null,y:null}}, action) =>  {
+export const itineraryWaypoint = (state = {departureWaypoint:{x:48.8618,y:2.3470}, arrivalWaypoint:{x:48.8793,y:2.4159}}, action) =>  {
     switch(action.type){
         case actions.CHANGE_ITINERARY:
             return{
                 departureWaypoint:{
-                    x:action.departure.x,
-                    y:action.departure.y
+                    x:action[0].x,
+                    y:action[0].y
                 },
                 arrivalWaypoint:{
-                    x: action.arrival.x,
-                    y:action.arrival.y
+                    x: action[1].x,
+                    y:action[1].y
                 }
             }
         default:
